@@ -1,58 +1,88 @@
 <!-- 0 -->
-<div class="ui segments" style="width: 100%;">
+<!--
+<div class="blackMod-important ui" style="width: 100%;">
+<div class="blackMod-important ui" style="width: 100%; height: 100%; overflow-y: auto;">
+-->
+<div class="blackMod-important ui" style="width: 100%; height: 100%; overflow-y: auto;">
 
 	<style>
+		body {
+			background-color: #000000;
+			color: #ffffff;
+			font-size: 11px;
+		}
+
+		label {
+			background-color: #000000 !important;
+			color: #ffffff !important;
+		}
+
 		p {
 			display: block;
 		}
 
-		.l_n   { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; }
-		.l_n_b { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; font-size: 14px; color: #FF0000; font-weight: 800; }
-		.l_n_s { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; font-size: 14px; color: #0000FF; font-weight: 800; }
+		span {
+			/*/
+			text-shadow: 0 0 2px #ffffff;
+			text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+			/*/
+		}
+
+
+
+		.blackMod-important {
+			background-color: #000000 !important;
+			color: #ffffff !important;
+		}
+
+		.l_n   { display: block; overflow:hidden; white-space: nowrap; width: 80px; max-width: 80px; }
+		.l_n_b { display: block; overflow:hidden; white-space: nowrap; width: 80px; max-width: 80px; font-size: 13px; color: #ff0000; font-weight: 800; }
+		.l_n_s { display: block; overflow:hidden; white-space: nowrap; width: 80px; max-width: 80px; font-size: 13px; color: #0040ff; font-weight: 800; }
 
 		/*/
-		.l_n   { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; border-color: #000000; border-left-width: 1px; border-left-style: dashed; }
-		.l_n_b { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; border-color: #000000; border-left-width: 1px; border-left-style: dashed; font-size: 14px; color: #FF0000; font-weight: 800; }
-		.l_n_s { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; border-color: #000000; border-left-width: 1px; border-left-style: dashed; font-size: 14px; color: #0000FF; font-weight: 800; }
+		.l_n   { display: block; overflow:hidden; white-space: nowrap; width: 80px; max-width: 80px; border-color: #000000; border-left-width: 1px; border-left-style: dashed; }
+		.l_n_b { display: block; overflow:hidden; white-space: nowrap; width: 80px; max-width: 80px; border-color: #000000; border-left-width: 1px; border-left-style: dashed; font-size: 13px; color: #ff0000; font-weight: 800; }
+		.l_n_s { display: block; overflow:hidden; white-space: nowrap; width: 80px; max-width: 80px; border-color: #000000; border-left-width: 1px; border-left-style: dashed; font-size: 13px; color: #0040ff; font-weight: 800; }
 		//*/
 
-		.l_c    { display: block; overflow:hidden; width: 40px; }
-		.l_c_rb { display: block; overflow:hidden; width: 40px; font-size: 14px; color: #FF0000; font-weight: 800; }
-		.l_c_bs { display: block; overflow:hidden; width: 40px; font-size: 14px; color: #0000FF; font-weight: 800; }
+		.l_c    { display: block; overflow:hidden; width: 45px; }
+		.l_c_rb { display: block; overflow:hidden; width: 45px; font-size: 13px; color: #ff0000; font-weight: 800; }
+		.l_c_bs { display: block; overflow:hidden; width: 45px; font-size: 13px; color: #0040ff; font-weight: 800; }
 
-		.l_u    { display: block; overflow:hidden; width: 90px !important; }
-		.l_u_rb { display: block; overflow:hidden; width: 90px !important; font-size: 14px; color: #FF0000; font-weight: 800; }
-		.l_u_bs { display: block; overflow:hidden; width: 90px !important; font-size: 14px; color: #0000FF; font-weight: 800; }
+		.l_u    { display: block; overflow:hidden; width: 40px !important; }
+		.l_u_rb { display: block; overflow:hidden; width: 40px !important; color: #ff0000; }
+		.l_u_bs { display: block; overflow:hidden; width: 40px !important; color: #0040ff; }
 
 		.l_r    { display: block; overflow:hidden; width: 50px; }
-		.l_r_rb { display: block; overflow:hidden; width: 50px; font-size: 14px; color: #FF0000; font-weight: 800; }
-		.l_r_bs { display: block; overflow:hidden; width: 50px; font-size: 14px; color: #0000FF; font-weight: 800; }
+		.l_r_rb { display: block; overflow:hidden; width: 50px; font-size: 13px; color: #ff0000; font-weight: 800; }
+		.l_r_bs { display: block; overflow:hidden; width: 50px; font-size: 13px; color: #0040ff; font-weight: 800; }
 
 
-		.l_c_r { color: #ff0000; display: block; overflow:hidden; width: 40px; }
-		.l_u_r { color: #ff0000; display: block; overflow:hidden; width: 90px !important; }
-		.l_r_r { color: #ff0000; display: block; overflow:hidden; width: 40px; }
+		.l_c_r { color: #ff4000; display: block; overflow:hidden; width: 45px; }
+		.l_u_r { color: #ff4000; display: block; overflow:hidden; width: 40px !important; }
+		.l_r_r { color: #ff4000; display: block; overflow:hidden; width: 50px; }
 
-		.l_c_b { color: #0000ff; display: block; overflow:hidden; width: 40px; }
-		.l_u_b { color: #0000ff; display: block; overflow:hidden; width: 90px !important; }
-		.l_r_b { color: #0000ff; display: block; overflow:hidden; width: 40px; }
+		.l_c_b { color: #00a0ff; display: block; overflow:hidden; width: 45px; }
+		.l_u_b { color: #00a0ff; display: block; overflow:hidden; width: 40px !important; }
+		.l_r_b { color: #00a0ff; display: block; overflow:hidden; width: 50px; }
 
 		/*/
 		.div_item { display:flex; padding: 2px; height: 30px; border-color: #000000; border-width: 1px; border-style: dashed; }
+		.div_item { display:flex; padding-left: 3px; padding-right: 3px; height: 28px; border-left-color: #FFFFFF; border-left-width: 1px; border-left-style: dashed; font-weight: 800; }
 		//*/
-		.div_item { display:flex; padding-left: 4px; height: 30px; border-left-color: #000000; border-left-width: 1px; border-left-style: dashed; font-weight: 800; }
+		.div_item { display:flex; padding-left: 3px; padding-right: 3px; height: 28px; border-left-color: #FFFFFF; border-left-width: 1px; border-left-style: dashed; }
 
 		.k_c { overflow:hidden; width: 50px; }
 		.k_u { overflow:hidden; width: 50px; }
 		.k_r { overflow:hidden; width: 50px; }
 
-		.k_c_r { color: #ff0000; overflow:hidden; width: 50px; }
-		.k_u_r { color: #ff0000; overflow:hidden; width: 50px; }
-		.k_r_r { color: #ff0000; overflow:hidden; width: 50px; }
+		.k_c_r { color: #ff4000; overflow:hidden; width: 50px; }
+		.k_u_r { color: #ff4000; overflow:hidden; width: 50px; }
+		.k_r_r { color: #ff4000; overflow:hidden; width: 50px; }
 
-		.k_c_b { color: #0000ff; overflow:hidden; width: 50px; }
-		.k_u_b { color: #0000ff; overflow:hidden; width: 50px; }
-		.k_r_b { color: #0000ff; overflow:hidden; width: 50px; }
+		.k_c_b { color: #00a0ff; overflow:hidden; width: 50px; }
+		.k_u_b { color: #00a0ff; overflow:hidden; width: 50px; }
+		.k_r_b { color: #00a0ff; overflow:hidden; width: 50px; }
 	</style>
 
 	<!-- 1 -->
@@ -61,7 +91,12 @@
 	</div>
 
 	<!-- 1 -->
+	<!--
 	<div class="ui horizontal segments">
+	<div class="blackMod-important ui horizontal">
+	-->
+	<div class="blackMod-important ui" style="display: flex;" >
+
 		<div class="ui tiny form" style="width: 400px; height: 60px;">
 			<div class="field">
 				<div class="two fields">
@@ -117,59 +152,65 @@
 
 	<!-- 1 -->
 	<!--
-	<div class="ui vertical segments" style="margin-top: 0px; height: 960px; overflow-y: auto;">
-	<div class="ui vertical segments" style="margin-top: 0px; height: 2040px; overflow-y: auto;">
+	<div class="blackMod-important ui vertical segments" style="margin-top: 0px; height: 960px; overflow-y: auto;">
+	<div class="blackMod-important ui vertical segments" style="margin-top: 0px; height: 2040px; overflow-y: auto;">
 	-->
-	<div class="ui vertical segments" style="margin-top: 0px; height: 2040px; overflow-y: auto;">
+	<!-- 2 -->
+	<div class="ui attached segment" style="font-size: 11px;">
+		<h3 class="ui header">KOSPI</h3>
+		<div class="blackMod-important ui horizontal segments" style="padding: 5px;">
+			<div id="list_kospi-0"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi-1"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 
-		<!-- 2 -->
-		<div class="ui segment" style="font-size: 11px;">
-			<h3 class="ui header">KOSPI</h3>
-			<div class="ui horizontal segments" style="padding: 5px;">
-				<div id="list_kospi0"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi1"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi2"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi3"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi4"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi5"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi6"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi7"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi8"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi9"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi10"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi11"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi12"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi13"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi14"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi15"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kospi16"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-			</div>
+			<div id="list_kospi0"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi1"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi2"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi3"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi4"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi5"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi6"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi7"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi8"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi9"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi10"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi11"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi12"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi13"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi14"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<!--
+			<div id="list_kospi15"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi16"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			-->
 		</div>
+	</div>
 
-		<!-- 2 -->
-		<div class="ui segment" style="font-size: 11px;">
-			<h3 class="ui header">KOSDAQ</h3>
-			<div class="ui horizontal segments" style="padding: 5px;">
-				<div id="list_kosdaq0"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq1"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq2"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq3"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq4"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq5"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq6"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq7"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq8"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq9"> <div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq10"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq11"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq12"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq13"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq14"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq15"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-				<div id="list_kosdaq16"><div id="{{code}}" class="div_item"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
-			</div>
+	<!-- 2 -->
+	<div class="ui attached segment" style="font-size: 11px;">
+		<h3 class="ui header">KOSDAQ</h3>
+		<div class="blackMod-important ui horizontal segments" style="padding: 5px;">
+			<div id="list_kosdaq-0"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq-1"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+
+			<div id="list_kosdaq0"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq1"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq2"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq3"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq4"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq5"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq6"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq7"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq8"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq9"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq10"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq11"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq12"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq13"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq14"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<!--
+			<div id="list_kosdaq15"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq16"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			-->
 		</div>
-
 	</div>
 
 </div>

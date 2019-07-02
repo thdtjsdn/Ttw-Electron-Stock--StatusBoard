@@ -159,6 +159,9 @@
 	<div class="ui attached segment" style="font-size: 11px;">
 		<h3 class="ui header">KOSPI</h3>
 		<div class="blackMod-important ui horizontal segments" style="padding: 5px;">
+			<div id="list_kospi-0"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kospi-1"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+
 			<div id="list_kospi0"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 			<div id="list_kospi1"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 			<div id="list_kospi2"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
@@ -174,8 +177,10 @@
 			<div id="list_kospi12"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 			<div id="list_kospi13"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 			<div id="list_kospi14"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<!--
 			<div id="list_kospi15"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 			<div id="list_kospi16"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			-->
 		</div>
 	</div>
 
@@ -183,6 +188,9 @@
 	<div class="ui attached segment" style="font-size: 11px;">
 		<h3 class="ui header">KOSDAQ</h3>
 		<div class="blackMod-important ui horizontal segments" style="padding: 5px;">
+			<div id="list_kosdaq-0"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<div id="list_kosdaq-1"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+
 			<div id="list_kosdaq0"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 			<div id="list_kosdaq1"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 			<div id="list_kosdaq2"> <div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
@@ -198,8 +206,10 @@
 			<div id="list_kosdaq12"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 			<div id="list_kosdaq13"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 			<div id="list_kosdaq14"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			<!--
 			<div id="list_kosdaq15"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
 			<div id="list_kosdaq16"><div id="{{code}}" class="div_item" alt="{{name}}"><span class="l_n">{{name}}</span><span class="l_c">{{cost}}</span><span class="l_u">{{updn}}</span><span class="l_r">{{rate}}</span></div></div>
+			-->
 		</div>
 	</div>
 
